@@ -65,7 +65,7 @@
 
 html {
   background: var(--bg);
-  scroll-padding-top: 88px;
+  scroll-padding-top: 60px;
   -webkit-text-size-adjust: 100%;
 }
 

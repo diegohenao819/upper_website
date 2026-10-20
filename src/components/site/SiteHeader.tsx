@@ -4,7 +4,7 @@ import badge from "@/assets/brand/course-badge.png";
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 border-b border-line/80 bg-white/90 backdrop-blur-md supports-[backdrop-filter]:bg-white/75">
+    <header className="border-b border-line bg-white">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5 sm:px-8">
         <Link href="/" className="group flex items-center gap-3 rounded-md">
           <Image src={badge} alt="" width={36} height={36} priority className="size-9 shrink-0" />

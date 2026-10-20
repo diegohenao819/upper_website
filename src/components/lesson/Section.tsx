@@ -34,7 +34,7 @@ export function Section({ id, title, pattern, formula, children }: Props) {
   }, [id, slug, title]);
 
   return (
-    <section ref={ref} id={id} aria-labelledby={title ? `${id}-title` : undefined} className="scroll-mt-28 py-14 first:pt-4 sm:py-16">
+    <section ref={ref} id={id} aria-labelledby={title ? `${id}-title` : undefined} className="scroll-mt-16 py-14 first:pt-4 sm:py-16">
       {title && (
         <header className="mb-8">
           {pattern ? (

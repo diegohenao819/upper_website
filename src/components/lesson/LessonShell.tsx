@@ -17,8 +17,8 @@ export function LessonShell({ slug, children }: { slug: string; children: React.
 
   return (
     <LessonProvider slug={slug}>
-      {/* sticky progress strip under the site header */}
-      <div className="sticky top-16 z-30 border-b border-line bg-white/90 backdrop-blur-md supports-[backdrop-filter]:bg-white/75">
+      {/* progress strip, stays at the top of the screen while reading */}
+      <div className="sticky top-0 z-30 border-b border-line bg-white/90 backdrop-blur-md supports-[backdrop-filter]:bg-white/75">
         <div className="mx-auto flex h-11 max-w-6xl items-center gap-4 px-5 sm:px-8">
           <Link href="/topics" className="flex items-center gap-1.5 text-sm font-medium text-ink-3 hover:text-ink">
             <ArrowLeft className="size-4" aria-hidden="true" />
@@ -45,7 +45,7 @@ export function LessonShell({ slug, children }: { slug: string; children: React.
 
       <div className="mx-auto grid max-w-6xl gap-10 px-5 sm:px-8 lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-16">
         <nav aria-label="Lesson sections" className="hidden lg:block">
-          <ol className="sticky top-36 space-y-0.5 pt-14 text-sm">
+          <ol className="sticky top-16 space-y-0.5 pt-14 text-sm">
             {meta.sections.map((s) => {
               const done = isSectionDone(s.activities, state.lessons[slug]?.exercises ?? {});
               return (
