@@ -28,7 +28,9 @@ Built by the course's own professor around the course's own syllabus, themes (Gl
 
 - Official grades, submissions and deadlines live in Kevra (the LMS), not here. The site is self-study practice and reference.
 - Topics follow the 2026-II schedule: Period 1 Globalization (vocabulary and reading, reported speech, types of sentences, response paragraph, Project 1 oral presentation); Period 2 Human Rights (verb patterns, reading and discussion, suffixes prefixes and collocations, idioms and -ed pronunciation, Project 2 video podcast).
-- Entries are published progressively as the course advances; unpublished topics appear as upcoming.
+- Entries are published progressively as the course advances. Unpublished topics are hidden: the Topics page lists only published ones, and only they have a page.
+- The professor shares each topic by its direct link (/topics/<slug>); links must keep working and show a good preview (badge, title, summary) in WhatsApp, Teams or Kevra.
+- The homepage stays general: no weeks, dates or topic names. Topics are chosen on the Topics page.
 - Each entry may have a companion PDF learning guide (the Verb Patterns guide exists).
 
 ## Capabilities and Constraints
@@ -40,7 +42,7 @@ Built by the course's own professor around the course's own syllabus, themes (Gl
 
 ## Brand Commitments
 
-- Identity of the course itself: "Upper-Intermediate English", course code LI436. UTP is mentioned in text only; no institutional logos or colors.
+- Identity of the course itself: "Upper-Intermediate English". The course badge provided by the professor (round, "Upper-Intermediate English, G1 Group 1") is the site mark: header, favicon, link previews and home hero. UTP is mentioned in text only; no institutional logos or colors.
 - Style preference of the author: no em dashes and no middle dots in student-facing text.
 - Visual direction (chosen 2026-10-19): the category standard for modern learning sites, executed at full craft, not a themed concept. Quality bar: Brilliant.org (learn by manipulating, minimal), Duolingo web (instant, clear feedback), Khan Academy (lesson structure and visible progress), BBC Learning English (trustworthy English content).
 

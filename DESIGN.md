@@ -32,7 +32,20 @@ colors:
   pattern-5-soft: "#efe6f7"
   pattern-6: "#b45309"
   pattern-6-soft: "#fbeadb"
+  selection: "#cfdcff"
+  badge-field: "#eef3ff"
+  badge-navy: "#1c2b5a"
+  badge-red: "#e8325a"
+  badge-blue: "#1e6fd9"
+  badge-yellow: "#f2a900"
+  badge-green: "#3da34a"
 typography:
+  hero:
+    fontFamily: "Geist, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "clamp(2.75rem, 7vw, 5rem)"
+    fontWeight: 600
+    lineHeight: 0.98
+    letterSpacing: "-0.045em"
   display:
     fontFamily: "Geist, ui-sans-serif, system-ui, sans-serif"
     fontSize: "clamp(2.5rem, 6vw, 4.25rem)"
@@ -216,11 +229,18 @@ A near-monochrome ink-on-white system with one action color, a feedback pair, an
 
 ### Neutral
 - **Ground** (ground): page and Activity background.
-- **Surface** (surface) and **Surface 2** (surface-2): callouts, the verb list well, the "This week" band, hover fills, inactive progress segments, disabled buttons.
+- **Surface** (surface) and **Surface 2** (surface-2): callouts, the verb list well, the topic card teaser well, hover fills, inactive progress segments, disabled buttons.
+- **Selection** (selection): the text selection highlight.
 - **Hairline** (line) and **Hairline Strong** (line-strong): card borders and dividers; line-strong for unselected chips, inputs and secondary buttons.
 - **Ink** (ink), **Ink 2** (ink-2), **Ink 3** (ink-3): headings and emphasis; body prose; metadata, instructions and captions.
 
+### Brand Badge
+- **Course badge** (src/assets/brand/course-badge.png): the course's own round badge, used as the header mark, favicon, link preview and the home hero.
+- **Badge colors** (badge-navy, badge-red, badge-blue, badge-yellow, badge-green, on badge-field): sampled from the badge and used only for the draggable word tiles that float around it in the home hero, the soft circle behind it, and the heart in the footer credit.
+
 ### Named Rules
+**The Badge Rule.** Badge colors live only next to the badge (the home hero) and in the footer heart. Lessons, activities and controls never use them.
+
 **The One Blue Rule.** Action blue marks the thing to press or the thing chosen, and nothing else. Never use it as decoration, section tint or illustration fill.
 
 **The Feedback-Only Rule.** Green and red appear only after the student checks an answer (plus the done tick and the perfect score). Never use them for headings, callouts, warnings or brand accents.

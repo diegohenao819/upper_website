@@ -179,7 +179,7 @@ export function VerbFinder() {
           className="h-12 w-full rounded-xl border-2 border-line-strong bg-white pl-10 pr-4 text-[16px] outline-none transition-colors placeholder:text-ink-3/70 focus:border-accent"
         />
       </label>
-      <div aria-live="polite" className="mt-4 min-h-6">
+      <div aria-live="polite" className={q.trim() ? "mt-4" : ""}>
         {q.trim() && results.length === 0 && (
           <p className="text-[15px] text-ink-3">That verb is not on the course lists. Check the spelling, or ask your teacher.</p>
         )}

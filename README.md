@@ -20,7 +20,9 @@ Open http://localhost:3000.
 3. **Load the file** in `src/content/lessons/index.ts` (one line).
 4. **Open it** in `src/content/topics.ts`: change the topic's `status` from `"planned"` to `"published"` and add `minutes` (and `guidePdf` if there is a PDF in `public/guides/`).
 
-Push to GitHub and Vercel publishes it.
+Push to GitHub and Vercel publishes it. The topic then appears on the Topics page and has its own link to share: `https://<your-domain>/topics/<slug>` (the "Share link" button copies it). Topics that are not published have no page and do not appear anywhere.
+
+The homepage is intentionally general (no dates, weeks or topic names), so it never needs updating.
 
 ## Blocks you can use in any lesson
 

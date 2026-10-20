@@ -1,4 +1,5 @@
-// The course map. To publish a new entry:
+// The course map. Only "published" topics appear on the site (Topics page and /topics/<slug>).
+// Planned topics stay here, hidden, until you publish them. To publish a new entry:
 // 1. write src/content/lessons/<slug>.mdx
 // 2. register it in src/content/lessons/index.ts
 // 3. set its status to "published" below.
@@ -14,6 +15,8 @@ export type Topic = {
   status: TopicStatus;
   minutes?: number;
   guidePdf?: string;
+  // A sample sentence shown on the topic card; `focus` is highlighted.
+  teaser?: { before: string; focus: string; after: string };
 };
 
 export type Period = {
@@ -97,6 +100,7 @@ export const periods: Period[] = [
         status: "published",
         minutes: 45,
         guidePdf: "/guides/verb-patterns-learning-guide.pdf",
+        teaser: { before: "They enjoy ", focus: "going", after: " out." },
       },
       {
         slug: "human-rights-reading",
@@ -138,6 +142,9 @@ export const allTopics = periods.flatMap((p) =>
   p.topics.map((t) => ({ ...t, period: p })),
 );
 
+export const publishedTopics = allTopics.filter((t) => t.status === "published");
+
+// Only published topics have a page (and a shareable link).
 export function getTopic(slug: string) {
-  return allTopics.find((t) => t.slug === slug);
+  return publishedTopics.find((t) => t.slug === slug);
 }

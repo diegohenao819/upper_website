@@ -96,7 +96,7 @@ export function Results() {
           </a>
         )}
         <Link
-          href="/#topics"
+          href="/topics"
           className="inline-flex items-center gap-2 rounded-xl border border-line-strong px-5 py-3 text-[15px] font-semibold text-ink transition-colors hover:border-ink-3"
         >
           All topics

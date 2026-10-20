@@ -20,9 +20,9 @@ export function LessonShell({ slug, children }: { slug: string; children: React.
       {/* sticky progress strip under the site header */}
       <div className="sticky top-16 z-30 border-b border-line bg-white/90 backdrop-blur-md supports-[backdrop-filter]:bg-white/75">
         <div className="mx-auto flex h-11 max-w-6xl items-center gap-4 px-5 sm:px-8">
-          <Link href="/" className="flex items-center gap-1.5 text-sm font-medium text-ink-3 hover:text-ink">
+          <Link href="/topics" className="flex items-center gap-1.5 text-sm font-medium text-ink-3 hover:text-ink">
             <ArrowLeft className="size-4" aria-hidden="true" />
-            <span className="hidden sm:inline">All topics</span>
+            <span className="hidden sm:inline">Topics</span>
           </Link>
           <div
             className="h-1.5 flex-1 overflow-hidden rounded-full bg-surface-2"
