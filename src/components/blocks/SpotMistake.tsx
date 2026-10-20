@@ -75,7 +75,7 @@ export function SpotMistake({
         ) : (
           <motion.div key={step} initial={{ opacity: 0, x: 16 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -16 }} transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}>
             <p className="sr-only">Sentence {step + 1} of {items.length}.</p>
-            <div className="flex flex-wrap gap-x-1 gap-y-2 text-[clamp(1.15rem,2.4vw,1.4rem)] font-medium leading-snug">
+            <div className="flex flex-wrap gap-1.5 text-[clamp(1.1rem,2.4vw,1.3rem)] font-medium leading-snug">
               {toks.map((t, i) => {
                 const isTapped = tapped === i;
                 return (
@@ -86,8 +86,9 @@ export function SpotMistake({
                     onClick={() => answer(i)}
                     animate={isTapped && !t.wrong ? { x: [0, -5, 5, -2, 0] } : {}}
                     className={cn(
-                      "rounded-md px-1.5 py-0.5 transition-colors duration-200",
-                      !answered && "text-ink hover:bg-accent-soft hover:text-accent-ink",
+                      "min-h-11 rounded-md border px-2 transition-colors duration-200 sm:min-h-10",
+                      !answered && "border-line-strong bg-white text-ink hover:border-accent hover:bg-accent-soft hover:text-accent-ink",
+                      answered && "border-transparent",
                       answered && t.wrong && "bg-bad-soft text-[#8f1d27] line-through decoration-2",
                       answered && isTapped && !t.wrong && "bg-surface-2 text-ink-2",
                       answered && !t.wrong && !isTapped && "text-ink-2",

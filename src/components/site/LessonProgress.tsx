@@ -45,7 +45,7 @@ export function ContinueButton({ slug, title }: { slug: string; title: string })
     <div className="flex flex-col items-start gap-3">
       <Link
         href={href}
-        className="group inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-3 text-[15px] font-semibold text-white shadow-[0_1px_2px_rgb(36_83_230/0.3),0_6px_16px_rgb(36_83_230/0.22)] transition-colors hover:bg-accent-hover"
+        className="group inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-3 text-[15px] font-semibold text-white transition-colors hover:bg-accent-hover"
       >
         {started ? `Continue ${title.toLowerCase()}` : `Start ${title.toLowerCase()}`}
         <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" />

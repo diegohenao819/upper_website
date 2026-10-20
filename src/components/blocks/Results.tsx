@@ -20,18 +20,29 @@ export function Results() {
   const allDone = s.done === s.exerciseCount;
 
   return (
-    <div className="rounded-[20px] border border-line bg-white p-6 shadow-[var(--shadow-1)] sm:p-8">
+    <div className="rounded-xl border border-line bg-white p-6 sm:p-8">
       <div className="flex flex-wrap items-end justify-between gap-6">
         <div>
-          <p className="text-sm font-medium text-ink-3">
-            {allDone ? "You finished every activity." : `${s.done} of ${s.exerciseCount} activities done.`}
-          </p>
-          <p className="mt-1 text-[clamp(2.5rem,6vw,3.5rem)] font-semibold leading-none tracking-[-0.04em] text-ink tabular">
-            {s.total ? `${pct}%` : "0%"}
-            <span className="ml-2 text-lg font-medium tracking-normal text-ink-3">
-              {s.correct}/{s.total} answers correct
-            </span>
-          </p>
+          {s.done === 0 ? (
+            <>
+              <p className="text-xl font-semibold tracking-tight text-ink">Not started yet</p>
+              <p className="mt-1 max-w-[46ch] text-[15px] text-ink-3">
+                Your score appears here as soon as you check your first activity.
+              </p>
+            </>
+          ) : (
+            <>
+              <p className="text-sm font-medium text-ink-3">
+                {allDone ? "You finished every activity." : `${s.done} of ${s.exerciseCount} activities done.`}
+              </p>
+              <p className="mt-1 text-[clamp(2.5rem,6vw,3.5rem)] font-semibold leading-none tracking-[-0.04em] text-ink tabular">
+                {pct}%
+                <span className="ml-2 text-lg font-medium tracking-normal text-ink-3">
+                  {s.correct}/{s.total} answers correct
+                </span>
+              </p>
+            </>
+          )}
         </div>
         {s.done > 0 && (
           <button
@@ -78,7 +89,7 @@ export function Results() {
           <a
             href={topic.guidePdf}
             download
-            className="inline-flex items-center gap-2 rounded-xl bg-ink px-5 py-3 text-[15px] font-semibold text-white transition-colors hover:bg-black"
+            className="inline-flex items-center gap-2 rounded-xl border border-line-strong bg-white px-5 py-3 text-[15px] font-semibold text-ink transition-colors hover:border-ink-3"
           >
             <Download className="size-4" aria-hidden="true" />
             Download the learning guide (PDF)

@@ -92,8 +92,8 @@ export function VerbList({ pattern }: { pattern: PatternId }) {
 export function Tip({ children, kind = "tip", title }: { children: React.ReactNode; kind?: "tip" | "careful"; title?: string }) {
   const Icon = kind === "tip" ? Lightbulb : TriangleAlert;
   return (
-    <div className={cn("flex gap-3.5 rounded-xl px-4 py-4 sm:px-5", kind === "tip" ? "bg-accent-soft" : "bg-warn-soft")}>
-      <Icon className={cn("mt-0.5 size-5 shrink-0", kind === "tip" ? "text-accent" : "text-warn-ink")} aria-hidden="true" />
+    <div className={cn("flex gap-3.5 rounded-xl px-4 py-4 sm:px-5", "bg-surface")}>
+      <Icon className={cn("mt-0.5 size-5 shrink-0", "text-ink")} aria-hidden="true" />
       <div className="text-[16px] leading-relaxed text-ink-2 [&_strong]:text-ink">
         {title && <p className="mb-0.5 font-semibold text-ink">{title}</p>}
         {children}
@@ -163,7 +163,7 @@ export function VerbFinder() {
   const [q, setQ] = useState("");
   const results = findVerb(q);
   return (
-    <div className="rounded-[20px] border border-line bg-white p-5 shadow-[var(--shadow-1)] sm:p-7">
+    <div className="rounded-xl border border-line bg-white p-5 sm:p-7">
       <h3 className="text-lg font-semibold tracking-tight text-ink">Verb finder</h3>
       <p className="mt-1 text-[15px] text-ink-3">Not sure about a verb? Type it and see its pattern.</p>
       <label className="relative mt-4 block">

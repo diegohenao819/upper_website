@@ -45,9 +45,9 @@ export function GapFill({
   return (
     <Activity title={title} instructions={instructions}>
       <form onSubmit={check} noValidate>
-        <ol className="space-y-3">
+        <ol className="divide-y divide-line border-y border-line">
           {items.map((it, i) => (
-            <li key={i} className="rounded-xl border border-line p-3.5 sm:px-4">
+            <li key={i} className="py-4">
               <div className="flex gap-3">
                 <span className="w-5 shrink-0 pt-2 text-sm font-semibold text-ink-3 tabular">{i + 1}</span>
                 <div className="min-w-0 flex-1">

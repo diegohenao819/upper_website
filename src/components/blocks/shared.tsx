@@ -17,7 +17,7 @@ export function Activity({
   className?: string;
 }) {
   return (
-    <div className={cn("rounded-[20px] border border-line bg-white p-5 shadow-[var(--shadow-1)] sm:p-7", className)}>
+    <div className={cn("rounded-xl border border-line bg-white p-5 sm:p-7", className)}>
       <div className="mb-5">
         <h3 className="text-lg font-semibold tracking-tight text-ink">{title}</h3>
         {instructions && <p className="mt-1 text-[15px] text-ink-3">{instructions}</p>}

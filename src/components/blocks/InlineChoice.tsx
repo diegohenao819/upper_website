@@ -61,14 +61,14 @@ export function InlineChoice({
   return (
     <Activity title={title} instructions={instructions}>
       <div className={cn(!!aside && "grid gap-6 md:grid-cols-[minmax(0,1fr)_200px]")}>
-        <p className="text-[17px] leading-[2.4] text-ink">
+        <p className="text-[17px] leading-[2.1] text-ink">
           {parts.map((p, i) => {
             if (typeof p === "string") return <Fragment key={i}>{p}</Fragment>;
             slotIndex++;
             const si = slotIndex;
             const ok = checked && picks[si] === p.answer;
             return (
-              <span key={i} role="radiogroup" aria-label={`Gap ${si + 1}`} className="mx-0.5 inline-flex items-center gap-0.5 rounded-lg bg-surface p-0.5 align-middle leading-none">
+              <span key={i} role="radiogroup" aria-label={`Gap ${si + 1}`} className="mx-1 inline-flex items-center gap-1.5 align-middle leading-none">
                 <span className="sr-only">Gap {si + 1}:</span>
                 {p.options.map((o, oi) => {
                   const chosen = picks[si] === oi;
@@ -83,12 +83,12 @@ export function InlineChoice({
                       onClick={() => setPicks((s) => ({ ...s, [si]: oi }))}
                       animate={checked && chosen && !isAnswer ? { x: [0, -4, 4, -2, 0] } : {}}
                       className={cn(
-                        "rounded-md px-2 py-1.5 text-[15px] font-medium transition-[background-color,color,opacity] duration-200",
-                        !checked && chosen && "bg-accent text-white shadow-sm",
-                        !checked && !chosen && "text-ink-2 hover:bg-white hover:text-ink",
-                        checked && isAnswer && "bg-good text-white",
-                        checked && chosen && !isAnswer && "bg-bad text-white line-through",
-                        checked && !chosen && !isAnswer && "text-ink-3 opacity-40",
+                        "relative my-0.5 h-8 rounded-lg border px-2.5 text-[15px] font-medium leading-none transition-[background-color,border-color,color,opacity] duration-200 before:absolute before:-inset-x-0.5 before:-inset-y-1.5 before:content-['']",
+                        !checked && chosen && "border-accent bg-accent text-white",
+                        !checked && !chosen && "border-line-strong bg-white text-ink hover:border-ink-3",
+                        checked && isAnswer && "border-good bg-good text-white",
+                        checked && chosen && !isAnswer && "border-bad bg-bad text-white line-through",
+                        checked && !chosen && !isAnswer && "border-line text-ink-3 opacity-40",
                       )}
                     >
                       {o}

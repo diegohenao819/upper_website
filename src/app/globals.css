@@ -21,8 +21,6 @@
   --good-soft: #e5f5ec;
   --bad: #c42b37;
   --bad-soft: #fdecee;
-  --warn-soft: #fff6e0;
-  --warn-ink: #7a5300;
 
   /* pattern markers, same code as the printed learning guide */
   --p1: #2e7d32;
@@ -40,8 +38,6 @@
 
   --radius: 12px;
   --radius-sm: 8px;
-  --shadow-1: 0 1px 2px rgb(20 22 27 / 0.06), 0 2px 8px rgb(20 22 27 / 0.04);
-  --shadow-2: 0 2px 4px rgb(20 22 27 / 0.06), 0 12px 32px rgb(20 22 27 / 0.08);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -62,12 +58,8 @@
   --color-good-soft: var(--good-soft);
   --color-bad: var(--bad);
   --color-bad-soft: var(--bad-soft);
-  --color-warn-soft: var(--warn-soft);
-  --color-warn-ink: var(--warn-ink);
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --radius-card: var(--radius);
-  --shadow-1: var(--shadow-1);
-  --shadow-2: var(--shadow-2);
   --ease-out: var(--ease-out);
 }
 

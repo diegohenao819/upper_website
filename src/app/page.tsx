@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Clock, Download, Lock } from "lucide-react";
+import { ArrowRight, CalendarDays, Clock, Download, Lock } from "lucide-react";
 import { PatternMorph } from "@/components/blocks/PatternMorph";
 import { ContinueButton, ProgressBar } from "@/components/site/LessonProgress";
 import { SectionChecklist } from "@/components/site/SectionChecklist";
@@ -25,7 +25,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="rounded-[20px] border border-line bg-white p-6 shadow-[var(--shadow-2)] sm:p-9">
+        <div className="rounded-xl border border-line bg-white p-6 sm:p-9">
           <p className="mb-5 text-sm font-medium text-ink-3">
             This week: change verb 1 and watch verb 2.
           </p>
@@ -36,16 +36,18 @@ export default function Home() {
       {/* This week */}
       <section aria-labelledby="this-week" className="border-y border-line bg-surface">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 lg:py-20">
-          <h2 id="this-week" className="text-sm font-semibold text-ink-3">
-            This week, {current.week}
-          </h2>
-          <div className="mt-6 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
+          <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
             <div>
-              <p className="text-[clamp(2rem,4vw,2.75rem)] font-semibold leading-tight tracking-[-0.03em] text-ink">
+              <h2 id="this-week" className="text-[clamp(2rem,4vw,2.75rem)] font-semibold leading-tight tracking-[-0.03em] text-ink">
                 {current.title}
-              </p>
+              </h2>
               <p className="mt-3 max-w-[44ch] text-lg text-ink-2">{current.summary}</p>
               <dl className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-3">
+                <div className="flex items-center gap-1.5">
+                  <CalendarDays className="size-4" aria-hidden="true" />
+                  <dt className="sr-only">This week</dt>
+                  <dd>This week, {current.week}</dd>
+                </div>
                 <div className="flex items-center gap-1.5">
                   <dt className="sr-only">Type</dt>
                   <dd>{current.kind}</dd>
@@ -64,7 +66,7 @@ export default function Home() {
               <div className="mt-8 flex flex-wrap items-center gap-3">
                 <Link
                   href={`/topics/${current.slug}`}
-                  className="inline-flex items-center gap-2 rounded-xl bg-ink px-5 py-3 text-[15px] font-semibold text-white transition-colors hover:bg-black"
+                  className="inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-3 text-[15px] font-semibold text-white transition-colors hover:bg-accent-hover"
                 >
                   Open the lesson
                 </Link>
@@ -133,7 +135,7 @@ function TopicRow({ topic }: { topic: Topic }) {
       {open ? (
         <span className="flex shrink-0 items-center gap-1 pt-0.5 text-sm font-semibold text-accent">
           Open
-          <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
+          <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true" />
         </span>
       ) : (
         <span className="flex shrink-0 items-center gap-1.5 pt-0.5 text-sm text-ink-3">

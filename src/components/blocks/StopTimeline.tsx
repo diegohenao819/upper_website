@@ -26,7 +26,7 @@ export function StopTimeline() {
   const c = COPY[mode];
 
   return (
-    <div className="rounded-[20px] border border-line bg-white p-5 shadow-[var(--shadow-1)] sm:p-7">
+    <div className="rounded-xl border border-line bg-white p-5 sm:p-7">
       <div role="tablist" aria-label="Compare" className="inline-flex rounded-xl bg-surface p-1">
         {(["to", "ing"] as Mode[]).map((m) => (
           <button
@@ -41,7 +41,7 @@ export function StopTimeline() {
             )}
           >
             {mode === m && (
-              <motion.span layoutId="stop-tab" className="absolute inset-0 rounded-lg bg-white shadow-[var(--shadow-1)]" transition={{ type: "spring", stiffness: 500, damping: 40 }} />
+              <motion.span layoutId="stop-tab" className="absolute inset-0 rounded-lg bg-white ring-1 ring-line-strong" transition={{ type: "spring", stiffness: 500, damping: 40 }} />
             )}
             <span className="relative">{m === "to" ? "stopped + TO" : "stopped + -ING"}</span>
           </button>
@@ -71,7 +71,7 @@ export function StopTimeline() {
               transition={{ duration: 0.6, ease }}
               style={{ originX: 0 }}
               className={cn(
-                "absolute left-[2%] top-1/2 h-9 w-[40%] -translate-y-1/2 rounded-lg",
+                "absolute left-[1%] top-1/2 h-9 w-[37%] -translate-y-1/2 rounded-lg",
                 mode === "ing" ? "bg-[var(--p6)]" : "bg-surface-2",
               )}
             />
@@ -80,10 +80,10 @@ export function StopTimeline() {
               initial={{ scale: 0, rotate: -30 }}
               animate={{ scale: 1, rotate: 0 }}
               transition={{ delay: 0.5, type: "spring", stiffness: 400, damping: 18 }}
-              className="absolute left-[46%] top-1/2 size-12 -translate-x-1/2 -translate-y-1/2"
+              className="absolute left-[47.5%] top-1/2 size-12 -translate-x-1/2 -translate-y-1/2"
             >
               <svg viewBox="0 0 48 48" className="size-full">
-                <path d="M15 2h18l13 13v18L33 46H15L2 33V15z" fill="#c62828" />
+                <path d="M15 2h18l13 13v18L33 46H15L2 33V15z" fill="var(--ink)" />
                 <path d="M15.8 4h16.4L44 15.8v16.4L32.2 44H15.8L4 32.2V15.8z" fill="none" stroke="#fff" strokeWidth="1.5" />
                 <text x="24" y="28" textAnchor="middle" fontSize="11" fontWeight="700" fill="#fff" fontFamily="inherit">
                   STOP
@@ -97,7 +97,7 @@ export function StopTimeline() {
               transition={{ delay: 0.85, duration: 0.6, ease }}
               style={{ originX: 0 }}
               className={cn(
-                "absolute left-[52%] top-1/2 h-9 w-[40%] -translate-y-1/2 rounded-lg",
+                "absolute left-[57%] top-1/2 h-9 w-[37%] -translate-y-1/2 rounded-lg",
                 mode === "to" ? "bg-[var(--p6)]" : "border-2 border-dashed border-line-strong bg-white",
               )}
             />

@@ -1,0 +1,700 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T01:35:28.034647+00:00",
+  "title": "Design System: Upper-Intermediate English (LI436)",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Paper White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#262626",
+          "#424242",
+          "#5e5e5e",
+          "#7a7a7a",
+          "#999999",
+          "#b8b8b8",
+          "#d6d6d6",
+          "#f2f2f2"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Quiet Surface",
+        "canonical": "#f6f7f9",
+        "tonalRamp": [
+          "#1f242e",
+          "#353e50",
+          "#4b5871",
+          "#627293",
+          "#8592ad",
+          "#a9b3c6",
+          "#ced3de",
+          "#f0f1f5"
+        ]
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Deeper Surface",
+        "canonical": "#eef0f4",
+        "tonalRamp": [
+          "#1e242e",
+          "#343e51",
+          "#4a5873",
+          "#607295",
+          "#8392af",
+          "#a8b2c7",
+          "#cdd3df",
+          "#f0f1f5"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#e3e6eb",
+        "tonalRamp": [
+          "#20252d",
+          "#37404d",
+          "#4f5a6e",
+          "#66758f",
+          "#8895aa",
+          "#acb5c3",
+          "#cfd4dd",
+          "#f0f2f4"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Strong",
+        "canonical": "#cdd2da",
+        "tonalRamp": [
+          "#21252c",
+          "#38404c",
+          "#505b6c",
+          "#68768d",
+          "#8a95a8",
+          "#adb5c2",
+          "#d0d5dc",
+          "#f0f2f4"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#14161b",
+        "tonalRamp": [
+          "#21242c",
+          "#383e4c",
+          "#50586c",
+          "#68738d",
+          "#8a92a8",
+          "#adb3c2",
+          "#d0d4dc",
+          "#f0f1f4"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Body Ink",
+        "canonical": "#474e5c",
+        "tonalRamp": [
+          "#21252b",
+          "#3a3f4b",
+          "#525a6b",
+          "#6b758a",
+          "#8c95a6",
+          "#aeb5c1",
+          "#d1d4db",
+          "#f1f2f4"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Meta Ink",
+        "canonical": "#636b79",
+        "tonalRamp": [
+          "#22252a",
+          "#3c4049",
+          "#555c68",
+          "#6e7787",
+          "#8f96a3",
+          "#b0b6bf",
+          "#d2d5da",
+          "#f1f2f4"
+        ]
+      },
+      "action-blue": {
+        "role": "primary",
+        "displayName": "Action Blue",
+        "canonical": "#2453e6",
+        "tonalRamp": [
+          "#081745",
+          "#0e2777",
+          "#1338a9",
+          "#1948dc",
+          "#486fea",
+          "#7f9af0",
+          "#b6c5f7",
+          "#e8edfc"
+        ]
+      },
+      "action-blue-hover": {
+        "role": "primary",
+        "displayName": "Action Blue Pressed",
+        "canonical": "#1c44c4",
+        "tonalRamp": [
+          "#0a1743",
+          "#112874",
+          "#1839a5",
+          "#1f4ad6",
+          "#4c71e6",
+          "#829ced",
+          "#b8c6f5",
+          "#e9edfc"
+        ]
+      },
+      "action-blue-soft": {
+        "role": "primary",
+        "displayName": "Selection Wash",
+        "canonical": "#ebf0fe",
+        "tonalRamp": [
+          "#041649",
+          "#06267e",
+          "#0936b4",
+          "#0c46e9",
+          "#3d6df5",
+          "#7799f8",
+          "#b1c5fb",
+          "#e7edfe"
+        ]
+      },
+      "action-blue-ink": {
+        "role": "primary",
+        "displayName": "Selection Ink",
+        "canonical": "#1a3fb3",
+        "tonalRamp": [
+          "#0a1843",
+          "#112974",
+          "#183aa5",
+          "#1f4bd6",
+          "#4d72e5",
+          "#829ced",
+          "#b8c6f5",
+          "#e9edfc"
+        ]
+      },
+      "good": {
+        "role": "secondary",
+        "displayName": "Correct Green",
+        "canonical": "#0f7a4f",
+        "tonalRamp": [
+          "#08442c",
+          "#0f764c",
+          "#15a86d",
+          "#1bda8d",
+          "#49e9a9",
+          "#80efc3",
+          "#b6f6dc",
+          "#e8fcf4"
+        ]
+      },
+      "good-soft": {
+        "role": "secondary",
+        "displayName": "Correct Wash",
+        "canonical": "#e5f5ec",
+        "tonalRamp": [
+          "#153724",
+          "#25603f",
+          "#348859",
+          "#44b174",
+          "#6cc693",
+          "#98d7b4",
+          "#c4e8d4",
+          "#edf8f2"
+        ]
+      },
+      "good-ink": {
+        "role": "secondary",
+        "displayName": "Correct Ink",
+        "canonical": "#0b5a3a",
+        "tonalRamp": [
+          "#08442c",
+          "#0e764c",
+          "#15a86c",
+          "#1bda8d",
+          "#49e9a8",
+          "#80efc2",
+          "#b6f6dc",
+          "#e8fcf4"
+        ]
+      },
+      "bad": {
+        "role": "secondary",
+        "displayName": "Wrong Red",
+        "canonical": "#c42b37",
+        "tonalRamp": [
+          "#3f0e12",
+          "#6d181f",
+          "#9b222b",
+          "#c92c38",
+          "#da5862",
+          "#e58a91",
+          "#f0bcc0",
+          "#faeaeb"
+        ]
+      },
+      "bad-soft": {
+        "role": "secondary",
+        "displayName": "Wrong Wash",
+        "canonical": "#fdecee",
+        "tonalRamp": [
+          "#45070f",
+          "#780d19",
+          "#ab1224",
+          "#dd172f",
+          "#ec465a",
+          "#f17e8b",
+          "#f7b5bd",
+          "#fde8ea"
+        ]
+      },
+      "bad-ink": {
+        "role": "secondary",
+        "displayName": "Wrong Ink",
+        "canonical": "#8f1d27",
+        "tonalRamp": [
+          "#400d11",
+          "#6e161e",
+          "#9d202b",
+          "#cc2938",
+          "#dd5561",
+          "#e78891",
+          "#f1bbc0",
+          "#fbeaeb"
+        ]
+      },
+      "pattern-1": {
+        "role": "tertiary",
+        "displayName": "Pattern 1 Green (-ING)",
+        "canonical": "#2e7d32",
+        "tonalRamp": [
+          "#153816",
+          "#246127",
+          "#338a37",
+          "#42b348",
+          "#6ac86f",
+          "#97d99a",
+          "#c3e9c5",
+          "#ecf8ed"
+        ]
+      },
+      "pattern-1-soft": {
+        "role": "tertiary",
+        "displayName": "Pattern 1 Green (-ING) Tint",
+        "canonical": "#e6f2e6",
+        "tonalRamp": [
+          "#1a321a",
+          "#2d572d",
+          "#417c41",
+          "#54a154",
+          "#79b979",
+          "#a1cea1",
+          "#c9e3c9",
+          "#eef6ee"
+        ]
+      },
+      "pattern-2": {
+        "role": "tertiary",
+        "displayName": "Pattern 2 Navy (TO)",
+        "canonical": "#1f4e79",
+        "tonalRamp": [
+          "#10273d",
+          "#1b446a",
+          "#266196",
+          "#327ec3",
+          "#5d9cd5",
+          "#8db9e2",
+          "#bed7ee",
+          "#ebf3fa"
+        ]
+      },
+      "pattern-2-soft": {
+        "role": "tertiary",
+        "displayName": "Pattern 2 Navy (TO) Tint",
+        "canonical": "#e3ecf5",
+        "tonalRamp": [
+          "#142638",
+          "#234262",
+          "#325e8b",
+          "#407ab4",
+          "#6999c9",
+          "#96b8d9",
+          "#c3d6ea",
+          "#ecf2f8"
+        ]
+      },
+      "pattern-3": {
+        "role": "tertiary",
+        "displayName": "Pattern 3 Teal (object + TO)",
+        "canonical": "#00796b",
+        "tonalRamp": [
+          "#004c44",
+          "#008575",
+          "#00bda7",
+          "#00f5d8",
+          "#33ffe7",
+          "#70ffee",
+          "#adfff6",
+          "#e5fffc"
+        ]
+      },
+      "pattern-3-soft": {
+        "role": "tertiary",
+        "displayName": "Pattern 3 Teal (object + TO) Tint",
+        "canonical": "#ddf1ee",
+        "tonalRamp": [
+          "#163631",
+          "#275e56",
+          "#37867a",
+          "#47ad9e",
+          "#6ec3b7",
+          "#9ad5cc",
+          "#c5e7e2",
+          "#edf8f6"
+        ]
+      },
+      "pattern-4": {
+        "role": "tertiary",
+        "displayName": "Pattern 4 Slate (object + base)",
+        "canonical": "#455a64",
+        "tonalRamp": [
+          "#1f292d",
+          "#36474e",
+          "#4d6470",
+          "#648291",
+          "#86a0ac",
+          "#abbcc5",
+          "#cfd9de",
+          "#f0f3f5"
+        ]
+      },
+      "pattern-4-soft": {
+        "role": "tertiary",
+        "displayName": "Pattern 4 Slate (object + base) Tint",
+        "canonical": "#e6ebee",
+        "tonalRamp": [
+          "#1f282e",
+          "#36454f",
+          "#4c6370",
+          "#638092",
+          "#869eac",
+          "#aabbc5",
+          "#ced8de",
+          "#f0f3f5"
+        ]
+      },
+      "pattern-5": {
+        "role": "tertiary",
+        "displayName": "Pattern 5 Purple (same meaning)",
+        "canonical": "#6b2fa0",
+        "tonalRamp": [
+          "#28113b",
+          "#451e66",
+          "#622b92",
+          "#7f38bd",
+          "#9c61d1",
+          "#ba91df",
+          "#d8c0ec",
+          "#f3ebf9"
+        ]
+      },
+      "pattern-5-soft": {
+        "role": "tertiary",
+        "displayName": "Pattern 5 Purple (same meaning) Tint",
+        "canonical": "#efe6f7",
+        "tonalRamp": [
+          "#27133a",
+          "#442064",
+          "#612e8f",
+          "#7e3bb9",
+          "#9c64ce",
+          "#ba93dc",
+          "#d7c1eb",
+          "#f3ecf9"
+        ]
+      },
+      "pattern-6": {
+        "role": "tertiary",
+        "displayName": "Pattern 6 Amber (different meaning)",
+        "canonical": "#b45309",
+        "tonalRamp": [
+          "#492204",
+          "#7e3a06",
+          "#b45309",
+          "#e96c0c",
+          "#f58d3d",
+          "#f8af77",
+          "#fbd1b1",
+          "#fef1e7"
+        ]
+      },
+      "pattern-6-soft": {
+        "role": "tertiary",
+        "displayName": "Pattern 6 Amber (different meaning) Tint",
+        "canonical": "#fbeadb",
+        "tonalRamp": [
+          "#452408",
+          "#773f0d",
+          "#aa5a13",
+          "#dc7418",
+          "#eb9447",
+          "#f1b47e",
+          "#f7d4b6",
+          "#fcf2e8"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page titles: home hero and lesson title."
+      },
+      "morph": {
+        "displayName": "Morph",
+        "purpose": "The PatternMorph sentence."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Activity titles, MDX h3, period headings."
+      },
+      "question": {
+        "displayName": "Question",
+        "purpose": "Practice prompt sentence."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Lesson prose, 68ch max."
+      },
+      "ui": {
+        "displayName": "Ui",
+        "purpose": "Buttons, chips, answers, feedback."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Meta rows, nav, instructions, captions."
+      }
+    },
+    "shadows": [
+      {
+        "name": "chip-edge",
+        "value": "0 1px 0 rgb(20 22 27 / 0.06)",
+        "purpose": "Resting draggable or tappable word chip."
+      },
+      {
+        "name": "chip-lifted",
+        "value": "0 8px 24px rgb(20 22 27 / 0.18)",
+        "purpose": "Word chip while being dragged; the only lifted shadow in the system."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Default curve: feedback reveal (350ms), question slide (280ms), progress fill (700ms), drop animation (220ms)."
+      },
+      {
+        "name": "state-transition",
+        "value": "200ms",
+        "purpose": "Color and border changes on buttons, answers, chips."
+      },
+      {
+        "name": "morph-spring",
+        "value": "spring stiffness 420, damping 34, mass 0.9",
+        "purpose": "PatternMorph word swap and layout reflow (6px blur plus 18px slide)."
+      },
+      {
+        "name": "chip-spring",
+        "value": "spring stiffness 500, damping 38",
+        "purpose": "Chips moving between buckets and slots."
+      },
+      {
+        "name": "wrong-shake",
+        "value": "x: 0,-6,6,-3,3,0 over 400ms",
+        "purpose": "A wrong answer shakes; a right one pulses to scale 1.03."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "durations 0.01ms; morph falls back to fade",
+        "purpose": "prefers-reduced-motion support."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Solid action-blue button for Check, Next, See score and Open the lesson.",
+      "html": "<button class=\"ds-btn-primary\">Check</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 20px;border:0;border-radius:12px;background:var(--accent,#2453e6);color:#fff;font:600 15px/1 Geist,ui-sans-serif,system-ui,sans-serif;cursor:pointer;transition:background-color .2s,transform .2s}.ds-btn-primary:hover{background:var(--accent-hover,#1c44c4)}.ds-btn-primary:active{transform:scale(.98)}.ds-btn-primary:focus-visible{outline:2px solid var(--accent,#2453e6);outline-offset:2px}.ds-btn-primary:disabled{background:var(--surface-2,#eef0f4);color:var(--ink-3,#636b79);cursor:not-allowed}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "White bordered button for secondary actions such as the PDF guide download.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 15V3\"/><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><path d=\"m7 10 5 5 5-5\"/></svg>Learning guide (PDF)</a>",
+      "css": ".ds-btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border:1px solid var(--line-strong,#cdd2da);border-radius:12px;background:#fff;color:var(--ink,#14161b);font:600 15px/1.2 Geist,ui-sans-serif,system-ui,sans-serif;text-decoration:none;transition:border-color .2s}.ds-btn-secondary:hover{border-color:var(--ink-3,#636b79)}.ds-btn-secondary:focus-visible{outline:2px solid var(--accent,#2453e6);outline-offset:2px}"
+    },
+    {
+      "name": "Answer Options",
+      "kind": "custom",
+      "refersTo": "answer-option",
+      "description": "Large tappable answers: unselected, selected, correct, wrong.",
+      "html": "<div class=\"ds-answers\"><button class=\"ds-answer\">to go</button><button class=\"ds-answer is-selected\">going</button><button class=\"ds-answer is-correct\">going <span>&#10003;</span></button><button class=\"ds-answer is-wrong\">go <span>&#10005;</span></button></div>",
+      "css": ".ds-answers{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:520px}.ds-answer{display:flex;justify-content:space-between;align-items:center;min-height:48px;padding:12px 16px;border:2px solid var(--line,#e3e6eb);border-radius:12px;background:#fff;color:var(--ink,#14161b);font:500 16px Geist,ui-sans-serif,system-ui,sans-serif;text-align:left;cursor:pointer;transition:border-color .2s,background-color .2s}.ds-answer:hover{border-color:var(--line-strong,#cdd2da);background:var(--surface,#f6f7f9)}.ds-answer:focus-visible{outline:2px solid var(--accent,#2453e6);outline-offset:2px}.ds-answer.is-selected{border-color:var(--accent,#2453e6);background:var(--accent-soft,#ebf0fe);color:var(--accent-ink,#1a3fb3)}.ds-answer.is-correct{border-color:var(--good,#0f7a4f);background:var(--good-soft,#e5f5ec);color:#0b5a3a}.ds-answer.is-wrong{border-color:var(--bad,#c42b37);background:var(--bad-soft,#fdecee);color:#8f1d27}"
+    },
+    {
+      "name": "Feedback Panel",
+      "kind": "custom",
+      "refersTo": "feedback-correct",
+      "description": "Explained feedback after Check; green when right, red when wrong.",
+      "html": "<div class=\"ds-feedback\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0f7a4f\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m9 12 2 2 4-4\"/></svg><div><p class=\"ds-feedback-title\">Correct!</p><p>Enjoy is followed by the -ING form.</p></div></div><div class=\"ds-feedback is-wrong\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#c42b37\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m15 9-6 6\"/><path d=\"m9 9 6 6\"/></svg><div><p class=\"ds-feedback-title\">Not quite.</p><p>Decide takes TO + verb: decided to go.</p></div></div>",
+      "css": ".ds-feedback{display:flex;gap:12px;margin-top:16px;padding:14px 16px;border-radius:12px;background:var(--good-soft,#e5f5ec);color:#0b5a3a;font:400 15px/1.6 Geist,ui-sans-serif,system-ui,sans-serif;max-width:520px}.ds-feedback svg{flex-shrink:0;margin-top:2px}.ds-feedback p{margin:0}.ds-feedback-title{font-weight:600}.ds-feedback.is-wrong{background:var(--bad-soft,#fdecee);color:#8f1d27}"
+    },
+    {
+      "name": "Word Chips",
+      "kind": "chip",
+      "refersTo": "word-chip",
+      "description": "Draggable or tappable words in SortBuckets and SentenceBuilder; lifted shadow only while dragged.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\">avoid</button><button class=\"ds-chip is-selected\">decide</button><button class=\"ds-chip is-right\">enjoy &#10003;</button><button class=\"ds-chip is-wrong\">let &#10005;</button><span class=\"ds-chip is-lifted\">promise</span></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:8px}.ds-chip{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 12px;border:1px solid var(--line-strong,#cdd2da);border-radius:8px;background:#fff;color:var(--ink,#14161b);font:500 15px Geist,ui-sans-serif,system-ui,sans-serif;box-shadow:0 1px 0 rgb(20 22 27/.06);cursor:grab;transition:background-color .15s,border-color .15s,box-shadow .15s}.ds-chip:hover{border-color:var(--ink-3,#636b79)}.ds-chip:focus-visible{outline:2px solid var(--accent,#2453e6);outline-offset:2px}.ds-chip.is-selected{border-color:var(--accent,#2453e6);background:var(--accent,#2453e6);color:#fff}.ds-chip.is-right{border-color:rgb(15 122 79/.4);background:var(--good-soft,#e5f5ec);color:#0b5a3a;box-shadow:none}.ds-chip.is-wrong{border-color:rgb(196 43 55/.4);background:var(--bad-soft,#fdecee);color:#8f1d27;box-shadow:none}.ds-chip.is-lifted{border-color:var(--ink,#14161b);box-shadow:0 8px 24px rgb(20 22 27/.18);cursor:grabbing}"
+    },
+    {
+      "name": "Verb Picker",
+      "kind": "chip",
+      "refersTo": "verb-picker",
+      "description": "Pill radio group that drives PatternMorph; active is solid ink.",
+      "html": "<div class=\"ds-picker\"><button class=\"ds-pick is-active\">enjoy</button><button class=\"ds-pick\">decided</button><button class=\"ds-pick\">told me</button><button class=\"ds-pick\">made me</button></div>",
+      "css": ".ds-picker{display:flex;flex-wrap:wrap;gap:8px}.ds-pick{padding:6px 14px;border:1px solid var(--line-strong,#cdd2da);border-radius:9999px;background:#fff;color:var(--ink-2,#474e5c);font:500 14px Geist,ui-sans-serif,system-ui,sans-serif;cursor:pointer;transition:border-color .2s,color .2s}.ds-pick:hover{border-color:var(--ink-3,#636b79);color:var(--ink,#14161b)}.ds-pick:focus-visible{outline:2px solid var(--accent,#2453e6);outline-offset:2px}.ds-pick.is-active{border-color:var(--ink,#14161b);background:var(--ink,#14161b);color:#fff}"
+    },
+    {
+      "name": "PatternMorph Sentence",
+      "kind": "custom",
+      "refersTo": "verb-picker",
+      "description": "Signature: verb 2 in its pattern hue on tint, with numeral badge and formula label.",
+      "html": "<div class=\"ds-morph\"><p class=\"ds-morph-line\">They enjoy <span class=\"ds-morph-v2\">going</span> out.</p><p class=\"ds-morph-label\"><span class=\"ds-badge\">1</span>Pattern 1: verb + -ING</p></div>",
+      "css": ".ds-morph{padding:28px;border:1px solid var(--line,#e3e6eb);border-radius:12px;background:#fff;font-family:Geist,ui-sans-serif,system-ui,sans-serif}.ds-morph-line{margin:0;font-size:48px;font-weight:600;line-height:1.15;letter-spacing:-.03em;color:var(--ink,#14161b)}.ds-morph-v2{padding:0 .12em;border-radius:6px;background:var(--p1-soft,#e6f2e6);color:var(--p1,#2e7d32)}.ds-morph-label{display:flex;align-items:center;gap:10px;margin:20px 0 0;font-size:14px;font-weight:500;color:var(--ink-2,#474e5c)}.ds-badge{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:24px;padding:0 6px;border-radius:6px;background:var(--p1,#2e7d32);color:#fff;font-size:12px;font-weight:600}"
+    },
+    {
+      "name": "Callout",
+      "kind": "card",
+      "refersTo": "callout",
+      "description": "Neutral Tip or Careful note: surface fill, ink icon, never tinted by kind.",
+      "html": "<div class=\"ds-callout\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/><path d=\"M9 18h6\"/><path d=\"M10 22h4\"/></svg><div><p class=\"ds-callout-title\">There is no magic rule</p><p>Learn each verb with its partner: not just enjoy, but enjoy + -ING.</p></div></div>",
+      "css": ".ds-callout{display:flex;gap:14px;padding:16px 20px;border-radius:12px;background:var(--surface,#f6f7f9);color:var(--ink-2,#474e5c);font:400 16px/1.6 Geist,ui-sans-serif,system-ui,sans-serif;max-width:560px}.ds-callout svg{flex-shrink:0;margin-top:2px;color:var(--ink,#14161b)}.ds-callout p{margin:0}.ds-callout-title{font-weight:600;color:var(--ink,#14161b)}"
+    },
+    {
+      "name": "Verb Search Input",
+      "kind": "input",
+      "refersTo": "input-search",
+      "description": "VerbFinder field: 2px border, action blue on focus.",
+      "html": "<label class=\"ds-search\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/></svg><input placeholder=\"e.g. avoid, decide, let\"></label>",
+      "css": ".ds-search{position:relative;display:block;max-width:420px}.ds-search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--ink-3,#636b79);pointer-events:none}.ds-search input{width:100%;height:48px;padding:0 16px 0 40px;border:2px solid var(--line-strong,#cdd2da);border-radius:12px;background:#fff;font:400 16px Geist,ui-sans-serif,system-ui,sans-serif;color:var(--ink,#14161b);outline:none;transition:border-color .2s;box-sizing:border-box}.ds-search input:focus{border-color:var(--accent,#2453e6)}"
+    },
+    {
+      "name": "Site Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sticky translucent header with course name and two links.",
+      "html": "<header class=\"ds-nav\"><span class=\"ds-nav-brand\"><b>Upper-Intermediate English</b><small>LI436 | 2026-2</small></span><nav><a href=\"#\">Topics</a><a href=\"#\">This week</a></nav></header>",
+      "css": ".ds-nav{display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 32px;border-bottom:1px solid var(--line,#e3e6eb);background:rgb(255 255 255/.75);backdrop-filter:blur(12px);font-family:Geist,ui-sans-serif,system-ui,sans-serif}.ds-nav-brand{display:flex;flex-direction:column;line-height:1.25}.ds-nav-brand b{font-size:15px;font-weight:600;color:var(--ink,#14161b)}.ds-nav-brand small{font-size:12px;color:var(--ink-3,#636b79)}.ds-nav nav{display:flex;gap:4px}.ds-nav a{padding:8px 12px;border-radius:8px;font-size:14px;font-weight:500;color:var(--ink-2,#474e5c);text-decoration:none;transition:background-color .2s,color .2s}.ds-nav a:hover{background:var(--surface,#f6f7f9);color:var(--ink,#14161b)}.ds-nav a:focus-visible{outline:2px solid var(--accent,#2453e6);outline-offset:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Answer Key That Talks Back",
+    "overview": "A learning site held to the category standard of Brilliant, Khan Academy, Duolingo web and BBC Learning English. The page is a white sheet with ink text; nothing decorates it. Each idea is stated in plain prose and then immediately handed to the student as something to touch: a verb to switch, a word to drop in a gap, a chip to sort. Every check answers with an explanation, never a bare right or wrong.\n\nDensity is calm and reading-first: a 68ch prose column, generous section rhythm, large tappable answers sized for a thumb on a phone. Color is spent on meaning only. One blue means \"act here\", green and red mean \"you were right / you were wrong\", and six small pattern hues carry the same code as the printed learning guide so the screen and the paper agree. Motion is quick, eased out and purposeful: words morph, wrong answers shake, feedback slides open.\n\nThe system rejects the decorated course portal: banner heroes, stock photography, icon-card walls, drop-shadowed tiles.",
+    "keyCharacteristics": [
+      "White ground, ink text, hairline 1px borders, 12px corners, flat surfaces.",
+      "One action blue for primaries, selection and progress; nothing else is blue.",
+      "Green and red appear only as answer feedback.",
+      "Six pattern hues as small markers (badges, highlighted verb phrases, dots), always with their soft tint.",
+      "Geist throughout, semibold and tightly tracked at display sizes.",
+      "Every practice block lives in the same bordered Activity frame with Check, Feedback, Next, Score, Try again."
+    ],
+    "rules": [
+      {
+        "name": "The One Blue Rule",
+        "body": "Action blue marks the thing to press or the thing chosen, and nothing else. Never use it as decoration, section tint or illustration fill.",
+        "section": "colors"
+      },
+      {
+        "name": "The Feedback-Only Rule",
+        "body": "Green and red appear only after the student checks an answer (plus the done tick and the perfect score). Never use them for headings, callouts, warnings or brand accents.",
+        "section": "colors"
+      },
+      {
+        "name": "The Guide Code Rule",
+        "body": "Pattern hue N always means pattern N, matching the printed learning guide. A new lesson that has no numbered patterns does not borrow these hues for decoration; a new lesson with its own categories maps them in order and keeps them small.",
+        "section": "colors"
+      },
+      {
+        "name": "The Plain Voice Rule",
+        "body": "Student-facing text avoids em dashes and middle dots. Use commas, colons, periods or a pipe (\"LI436 | 2026-2\") for separators.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Count Rule",
+        "body": "Scores, counts, weeks and badge numerals use tabular numerals.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Card Rule",
+        "body": "Cards, Activity frames, callouts and panels have no shadow. Depth comes from a 1px line border or a surface fill.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Lift-On-Drag Rule",
+        "body": "A shadow means \"you are holding this\". It appears on a chip in the drag state and nowhere else.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** wrap every new practice block in the Activity frame and end it with Feedback that explains the answer, then Score and Try again.",
+      "**Do** build new lessons in MDX from the registered blocks (Section, PatternMorph, ChoiceSet, SortBuckets, InlineChoice, GapFill, SpotMistake, SentenceBuilder, StopTimeline, FlipCards, Contrast, Examples, Tip, VerbFinder, VerbList, Results) before inventing a new component.",
+      "**Do** keep corners at 12px for containers and answers, 8px for chips, 6px for in-line marks.",
+      "**Do** keep tappable answers at 44px minimum height (48px for answer options) and text inputs at 16px to avoid phone zoom.",
+      "**Do** mark the grammar part of an example with the pattern hue on its soft tint, and use the same hue for that pattern everywhere on the page.",
+      "**Do** honor prefers-reduced-motion: every morph and slide must collapse to a fade or nothing.",
+      "**Do** write student-facing copy without em dashes or middle dots."
+    ],
+    "donts": [
+      "**Don't** put shadows on cards, Activity frames, callouts or buttons; shadow is reserved for a dragged chip.",
+      "**Don't** introduce a second action color or use blue decoratively.",
+      "**Don't** use green or red outside answer feedback (no green \"tip\" or red \"careful\" callouts; callouts stay neutral surface with ink icons).",
+      "**Don't** reassign pattern hues to new meanings or enlarge them into backgrounds and banners.",
+      "**Don't** add banner heroes, stock photography or icon-card grids.",
+      "**Don't** add small label lines (eyebrows or kickers) above headings; the heading and its metadata row carry the context.",
+      "**Don't** add a new type family or set display text in a system face; Geist through next/font only."
+    ]
+  }
+}
