@@ -1,0 +1,397 @@
+<Section id="idea" title="The idea">
+
+Sometimes two verbs go together in the same sentence. **The first verb decides the form of the second verb.** That combination is called a **verb pattern**. Try it: choose verb 1 and watch verb 2 change.
+
+<div className="rounded-[20px] border border-line bg-white p-6 shadow-[var(--shadow-1)] sm:p-8">
+  <PatternMorph size="display" />
+</div>
+
+Verb 2 can only take three forms: the **-ING form** (going), **TO + verb** (to go) or the **base verb** (go).
+
+### Why is this hard for Spanish speakers?
+
+In Spanish, verb 2 is almost always the infinitive. In English, it changes depending on verb 1.
+
+<Contrast
+  rows={[
+    ["Disfruto [bailar].", "I enjoy [dancing]."],
+    ["Decidí [viajar].", "I decided [to travel]."],
+    ["Me hizo [llorar].", "She made me [cry]."],
+  ]}
+/>
+
+<Tip title="There is no magic rule">
+  Learn each verb with its partner, like a package: not just **enjoy**, but **enjoy + -ING**. Negative? Put
+  **not** before verb 2: I decided **not to go**. I regret **not studying**.
+</Tip>
+
+</Section>
+
+<Section id="pattern-1" pattern={1} title="Verb + -ING" formula="verb 1 + [verb-ING]">
+
+<Examples
+  pattern={1}
+  items={[
+    "I enjoy [going] to the park with my niece.",
+    "He admitted [stealing] the money.",
+    "Learning a language involves [studying] a little every day.",
+  ]}
+/>
+
+<VerbList pattern={1} />
+
+<Tip title="After a preposition, always -ING">
+  About, of, for, in, on, from... She worries about **failing**. He insisted on **paying**. Thanks for
+  **helping** me.
+</Tip>
+
+<Tip kind="careful" title='Careful with "to"'>
+  In **look forward to** and **be used to**, "to" is a preposition, so -ING follows: I look forward to
+  **meeting** you. I'm used to **working** at night.
+</Tip>
+
+<ChoiceSet
+  id="vp-check-1"
+  questions={[
+    {
+      prompt: "We should avoid ___ junk food.",
+      options: ["to eat", "eating"],
+      answer: 1,
+      explain: "Avoid is a pattern 1 verb: avoid + -ING.",
+    },
+    {
+      prompt: "I'm looking forward to ___ my cousins in December.",
+      options: ["see", "seeing"],
+      answer: 1,
+      explain: "In look forward to, 'to' is a preposition, so the verb takes -ING.",
+    },
+    {
+      prompt: "Do you feel like ___ a movie tonight?",
+      options: ["watching", "to watch"],
+      answer: 0,
+      explain: "Feel like + -ING.",
+    },
+  ]}
+/>
+
+</Section>
+
+<Section id="pattern-2" pattern={2} title="Verb + TO + verb" formula="verb 1 + [to + verb]">
+
+<Examples
+  pattern={2}
+  items={["They decided [to buy] a new car.", "I can't afford [to travel] this year.", "We agreed [not to tell] anyone."]}
+/>
+
+<VerbList pattern={2} />
+
+<Tip title="A useful clue">
+  Many of these verbs talk about a **plan** or the **future** (decide, hope, plan, promise, want). The action of
+  verb 2 has not happened yet.
+</Tip>
+
+<ChoiceSet
+  id="vp-check-2"
+  questions={[
+    {
+      prompt: "She refused ___ the document.",
+      options: ["signing", "to sign"],
+      answer: 1,
+      explain: "Refuse + TO.",
+    },
+    {
+      prompt: "I hope ___ my degree next year.",
+      options: ["to finish", "finishing"],
+      answer: 0,
+      explain: "Hope + TO. Finish is verb 2 here, so verb 1 (hope) decides its form.",
+    },
+    {
+      prompt: "They managed ___ the last bus.",
+      options: ["catching", "to catch"],
+      answer: 1,
+      explain: "Manage + TO.",
+    },
+  ]}
+/>
+
+</Section>
+
+<Section id="pattern-3" pattern={3} title="Verb + object + TO + verb" formula="verb 1 + object + [to + verb]">
+
+The **object** (me, you, him, her, us, them, the students...) is the person who does verb 2.
+
+<Examples
+  pattern={3}
+  items={[
+    "The coach told **me** [not to be] late for training.",
+    "They encouraged **the students** [not to give up].",
+    "My parents want **me** [to study] medicine.",
+  ]}
+/>
+
+<VerbList pattern={3} />
+
+<Tip kind="careful" title="Spanish trap">
+  "Quiero que tú vengas" is NOT "I want that you come". In English: I want **you to come**.
+</Tip>
+
+<SentenceBuilder
+  id="vp-build-3"
+  items={[
+    { tiles: ["My parents", "want", "me", "to study", "medicine."], why: "want + object (me) + to + verb." },
+    { tiles: ["The teacher", "reminded", "us", "to bring", "our IDs."], why: "remind + object (us) + to + verb." },
+    { tiles: ["She", "asked", "him", "not to call", "again."], why: "Negative: object + not to + verb." },
+  ]}
+/>
+
+</Section>
+
+<Section id="pattern-4" pattern={4} title="Verb + object + base verb" formula="verb 1 + object + [base verb]">
+
+Only a few verbs, and **no "to"**.
+
+<Examples
+  pattern={4}
+  items={[
+    "She made **me** [watch] her favorite movie.",
+    "They made **him** [apologize] to the class.",
+    "She didn't let **me** [open] the window.",
+    "Can you help **me** [(to) solve] this puzzle? With help, \"to\" is optional.",
+  ]}
+/>
+
+<VerbList pattern={4} />
+
+<Tip title="Would rather">
+  **Would rather** also takes the base verb, but **without an object**: I would rather **stay** home tonight.
+</Tip>
+
+<ChoiceSet
+  id="vp-check-4"
+  questions={[
+    {
+      prompt: "My boss made me ___ late on Friday.",
+      options: ["to work", "work"],
+      answer: 1,
+      explain: "Make + object + base verb. No 'to'.",
+    },
+    {
+      prompt: "Our parents never let us ___ alone.",
+      options: ["travel", "to travel"],
+      answer: 0,
+      explain: "Let + object + base verb.",
+    },
+    {
+      prompt: "The teacher allowed us ___ a dictionary.",
+      options: ["use", "to use"],
+      answer: 1,
+      explain: "Careful: allow is pattern 3 (object + TO), not pattern 4.",
+    },
+  ]}
+/>
+
+</Section>
+
+<Section id="pattern-5" pattern={5} title="-ING or TO, same meaning" formula="verb 1 + [verb-ING] or [to + verb]">
+
+<Examples pattern={5} items={["I like [swimming]. = I like [to swim].", "It started [raining]. = It started [to rain]."]} />
+
+<VerbList pattern={5} />
+
+<Tip kind="careful" title="With would, only TO">
+  I like **dancing**. I like **to dance**. But: I would like **to dance** tonight.
+</Tip>
+
+<ChoiceSet
+  id="vp-check-5"
+  questions={[
+    {
+      prompt: "I love ___ in the rain.",
+      options: ["walking", "to walk", "Both are correct"],
+      answer: 2,
+      explain: "Love is pattern 5: both forms are correct and mean the same.",
+    },
+    {
+      prompt: "I'd love ___ you this weekend.",
+      options: ["seeing", "to see", "Both are correct"],
+      answer: 1,
+      explain: "I'd love = I would love. With would, only TO.",
+    },
+    {
+      prompt: "He can't stand ___ in lines.",
+      options: ["waiting", "to wait", "Both are correct"],
+      answer: 2,
+      explain: "Can't stand takes both forms with the same meaning.",
+    },
+  ]}
+/>
+
+</Section>
+
+<Section id="pattern-6" pattern={6} title="-ING or TO, different meaning" formula="verb 1 + [verb-ING] or [to + verb]">
+
+Only **five verbs** (remember, forget, try, stop, regret), but they are important: the form changes the meaning. Switch between the two sentences.
+
+<StopTimeline />
+
+<Tip title="Shortcut">
+  **TO**: verb 2 comes **after** verb 1. **-ING**: verb 2 came **before**, or was already happening.
+  **Exception: try.**
+</Tip>
+
+### The five verbs
+
+<FlipCards
+  rows={[
+    {
+      verb: "remember",
+      to: { example: "Remember [to turn off] the lights when you leave.", meaning: "Don't forget to do it. It's in the future." },
+      ing: { example: "I remember [turning off] the lights.", meaning: "I have a memory of doing it in the past." },
+    },
+    {
+      verb: "forget",
+      to: { example: "He forgot [to send] the email.", meaning: "He didn't do something he had to do." },
+      ing: { example: "I'll never forget [visiting] Cartagena.", meaning: "I will always have the memory of it." },
+    },
+    {
+      verb: "try",
+      to: { example: "I tried [to open] the window, but it was locked.", meaning: "Make an effort to do something difficult." },
+      ing: { example: "It's hot. Try [opening] the window.", meaning: "Do it as an experiment to solve a problem." },
+    },
+    {
+      verb: "stop",
+      to: { example: "She stopped [to drink] some water.", meaning: "Pause one action in order to do another." },
+      ing: { example: "He stopped [watching] TV to study.", meaning: "Finish an action completely." },
+    },
+    {
+      verb: "regret",
+      to: { example: "We regret [to inform] you that the event is canceled.", meaning: "Be sorry to give bad news (formal)." },
+      ing: { example: "She regrets [telling] him her secret.", meaning: "Feel sorry about something in the past." },
+    },
+  ]}
+/>
+
+<ChoiceSet
+  id="vp-check-6"
+  questions={[
+    {
+      prompt: "We were tired, so we stopped ___ a coffee.",
+      options: ["having", "to have"],
+      answer: 1,
+      explain: "We paused in order to have a coffee: stop + TO.",
+    },
+    {
+      prompt: "I clearly remember ___ my first day at university.",
+      options: ["to have", "having"],
+      answer: 1,
+      explain: "A memory of the past: remember + -ING.",
+    },
+    {
+      prompt: "Please remember ___ your ID to the exam.",
+      options: ["bringing", "to bring"],
+      answer: 1,
+      explain: "Don't forget, it's in the future: remember + TO.",
+    },
+    {
+      prompt: "If you can't sleep, try ___ a warm drink.",
+      options: ["having", "to have"],
+      answer: 0,
+      explain: "An experiment to solve a problem: try + -ING.",
+    },
+  ]}
+/>
+
+</Section>
+
+<Section id="mistakes" title="Common mistakes">
+
+These are the mistakes Spanish speakers make most often:
+
+- **"que" sentences:** I want **you to help** me. Not: I want that you help me.
+- **Translating the Spanish infinitive:** I enjoy **cooking**. Not: I enjoy to cook.
+- **"to" that is a preposition:** I look forward to **seeing** you. Not: I look forward to see you.
+- **"to" after make or let:** My boss made me **work** late. Not: My boss made me to work late.
+
+<SpotMistake
+  id="vp-mistakes"
+  items={[
+    { sentence: "My parents expect [that I study] medicine.", fix: "My parents expect me to study medicine.", why: "Expect + object + to + verb. English does not use 'that' here." },
+    { sentence: "She suggested [to go] to the beach on Saturday.", fix: "She suggested going to the beach on Saturday.", why: "Suggest + -ING." },
+    { sentence: "The police made them [to leave] the building.", fix: "The police made them leave the building.", why: "Make + object + base verb, no 'to'." },
+    { sentence: "I'm used to waking up early.", why: "Be used to + -ING: here 'to' is a preposition." },
+    { sentence: "He avoided [to answer] the question.", fix: "He avoided answering the question.", why: "Avoid + -ING." },
+    { sentence: "The school didn't allow us [use] our phones in class.", fix: "The school didn't allow us to use our phones in class.", why: "Allow + object + to + verb." },
+    { sentence: "She is thinking about [to move] to Bogotá.", fix: "She is thinking about moving to Bogotá.", why: "After a preposition (about), always -ING." },
+    { sentence: "We decided not to travel this year.", why: "Decide + not to + verb. Perfect." },
+  ]}
+/>
+
+</Section>
+
+<Section id="practice" title="Practice">
+
+Try the activities **without looking** at the patterns first. Every answer tells you why.
+
+<SortBuckets
+  id="vp-sort"
+  title="-ING, TO or both?"
+  buckets={[
+    { id: "ing", label: "-ING only", color: "var(--p1)" },
+    { id: "to", label: "TO only", color: "var(--p2)" },
+    { id: "both", label: "Both", color: "var(--p5)" },
+  ]}
+  items={[
+    { word: "enjoy", bucket: "ing" },
+    { word: "decide", bucket: "to" },
+    { word: "love", bucket: "both" },
+    { word: "avoid", bucket: "ing" },
+    { word: "refuse", bucket: "to" },
+    { word: "finish", bucket: "ing" },
+    { word: "hope", bucket: "to" },
+    { word: "start", bucket: "both" },
+    { word: "keep", bucket: "ing" },
+    { word: "afford", bucket: "to" },
+  ]}
+/>
+
+<InlineChoice
+  id="vp-text"
+  title="Human rights: choose the correct option"
+  text="Everyone deserves {to live*|living::deserve + TO} with dignity. In 1948, the United Nations adopted the Universal Declaration of Human Rights, and since then it has encouraged governments {to protect*|protecting::encourage + object + TO} the freedom of all people. However, millions of people still can't afford {to go*|going::afford + TO} to school or see a doctor. Some governments deny {to violate|violating*::deny + -ING} human rights, but brave journalists keep {to report|reporting*::keep + -ING} the truth. Human rights organizations also try to persuade citizens {to speak*|speaking::persuade + object + TO} up. If you want to help, consider {to volunteer|volunteering*::consider + -ING} for a local organization. And remember {to treat*|treating::remember + TO, it's a future action} everyone with respect: human rights start with small, everyday actions."
+  aside={
+    <Figure
+      src="/images/udhr-eleanor-roosevelt-1949.jpg"
+      alt="Black and white photo of Eleanor Roosevelt holding a large poster of the Universal Declaration of Human Rights in Spanish"
+      caption="Eleanor Roosevelt with the Universal Declaration of Human Rights in Spanish, 1949."
+      credit="Wikimedia Commons, public domain."
+      width={900}
+      height={675}
+    />
+  }
+/>
+
+<GapFill
+  id="vp-gaps"
+  items={[
+    { before: "My parents never let me", verb: "watch", after: "TV after 9 p.m.", answers: ["watch"], why: "let + object + base verb." },
+    { before: "She promised", verb: "not / tell", after: "anyone about the surprise party.", answers: ["not to tell"], why: "promise + TO; negative: not to." },
+    { before: "The movie was so sad that I couldn't help", verb: "cry", after: ".", answers: ["crying"], why: "can't help + -ING." },
+    { before: "The teacher reminded us", verb: "bring", after: "our ID cards to the exam.", answers: ["to bring"], why: "remind + object + TO." },
+    { before: "I'm really looking forward to", verb: "meet", after: "your family.", answers: ["meeting"], why: "look forward to (preposition) + -ING." },
+    { before: "I can't stand", verb: "wait", after: "in long lines.", answers: ["waiting", "to wait"], why: "can't stand: both forms are correct." },
+    { before: "He stopped", verb: "smoke", after: "two years ago, and he feels much better now.", answers: ["smoking"], why: "stop + -ING: he doesn't smoke anymore." },
+    { before: "On the way home, we stopped", verb: "buy", after: "some bread.", answers: ["to buy"], why: "stop + TO: we paused in order to buy bread." },
+    { before: "I regret", verb: "not / listen", after: "to my grandmother's advice.", answers: ["not listening"], why: "regret + -ING: sorry about the past." },
+    { before: "Would you like", verb: "come", after: "to the concert with us?", answers: ["to come"], why: "would like + TO." },
+  ]}
+/>
+
+<VerbFinder />
+
+</Section>
+
+<Section id="finish" title="Your results">
+
+<Results />
+
+</Section>
