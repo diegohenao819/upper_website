@@ -11,6 +11,7 @@ import { StopTimeline } from "@/components/blocks/StopTimeline";
 import { FlipCards } from "@/components/blocks/FlipCards";
 import { Contrast, Examples, Figure, Tip, VerbFinder, VerbList } from "@/components/blocks/Reference";
 import { Results } from "@/components/blocks/Results";
+import { Video } from "@/components/blocks/Video";
 
 // Every block below can be used in any lesson .mdx file without importing it.
 const blocks = {
@@ -31,6 +32,7 @@ const blocks = {
   VerbFinder,
   VerbList,
   Results,
+  Video,
 };
 
 const components: MDXComponents = {

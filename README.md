@@ -40,6 +40,7 @@ No import needed inside `.mdx` files.
 | `FlipCards` | Read, guess, flip to see the meaning |
 | `StopTimeline` | Animated timeline: stopped to help vs stopped helping |
 | `Examples`, `VerbList`, `Tip`, `Contrast`, `Figure`, `VerbFinder` | Reference content |
+| `Video` | A YouTube video: `<Video id="VIDEO_ID" title="..." credit="Channel" />` (loads only on play) |
 | `Results` | Score summary at the end of a lesson |
 
 Inside examples, `[brackets]` mark the highlighted part and `**double stars**` mark the object.
